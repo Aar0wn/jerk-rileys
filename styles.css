@@ -347,7 +347,6 @@ button {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    animation: bounce 2s infinite;
 }
 
 .scroll-indicator span {
