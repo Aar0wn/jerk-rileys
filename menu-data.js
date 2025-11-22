@@ -33,7 +33,7 @@ const menuData = {
             name: "Street Corn Dip",
             price: 12.00,
             description: "Mexican-inspired roasted corn dip with cotija cheese, lime, chili powder, and cilantro. Served with warm tortilla chips.",
-            image: "https://images.unsplash.com/photo-1551574162-0eb1db2ff562?w=800&h=600&fit=crop",
+            image: "https://images.unsplash.com/photo-1619740455993-9e69a0ccef01?w=800&h=600&fit=crop",
             tags: ["Vegetarian"]
         },
         {
@@ -82,7 +82,7 @@ const menuData = {
             name: "Deviled Eggs",
             price: 7.00,
             description: "Classic deviled eggs with a creamy filling, topped with paprika and fresh chives.",
-            image: "https://images.unsplash.com/photo-1621744968804-54c05a89e2c9?w=800&h=600&fit=crop",
+            image: "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=800&h=600&fit=crop",
             tags: []
         }
     ],

@@ -1,0 +1,381 @@
+/* ===================================
+   Menu Modal Styles - Visual Design
+   =================================== */
+
+/* Modal Overlay */
+.menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+/* Modal Container */
+.menu-modal-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 90vh;
+    max-height: 900px;
+    margin: 0 20px;
+    background: var(--color-cream);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.menu-modal.active .menu-modal-container {
+    transform: scale(1);
+}
+
+/* Modal Header */
+.menu-modal-header {
+    position: relative;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-white);
+    border-bottom: 2px solid var(--color-green-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.menu-modal-title {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-green-dark);
+    margin: 0;
+}
+
+.menu-modal-close {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(27, 67, 50, 0.1);
+    color: var(--color-green-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.menu-modal-close:hover {
+    background: var(--color-green-dark);
+    color: var(--color-cream);
+    transform: rotate(90deg);
+}
+
+/* Category Tabs */
+.menu-modal-tabs {
+    padding: 0 var(--spacing-lg);
+    background: var(--color-white);
+    border-bottom: 1px solid rgba(27, 67, 50, 0.1);
+    display: flex;
+    gap: var(--spacing-xs);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+}
+
+.menu-modal-tabs::-webkit-scrollbar {
+    height: 3px;
+}
+
+.menu-modal-tabs::-webkit-scrollbar-thumb {
+    background: var(--color-green-medium);
+    border-radius: 2px;
+}
+
+.menu-modal-tab {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.menu-modal-tab:hover {
+    color: var(--color-green-dark);
+}
+
+.menu-modal-tab.active {
+    color: var(--color-green-dark);
+    border-bottom-color: var(--color-gold);
+}
+
+/* Modal Body */
+.menu-modal-body {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--spacing-lg);
+}
+
+/* Menu Grid */
+.menu-modal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Menu Item Card - Visual Design */
+.menu-item-card {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.menu-item-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 66.67%; /* 3:2 aspect ratio */
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-green-dark), var(--color-green-medium));
+}
+
+.menu-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover .menu-item-image {
+    transform: scale(1.05);
+}
+
+/* Image Overlay */
+.menu-item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-md);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu-item-name-overlay {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item-price-badge {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    background: var(--color-gold);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content */
+.menu-item-content {
+    padding: var(--spacing-md);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-description {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-sm);
+    flex: 1;
+}
+
+.menu-item-sauces {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-top: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
+    border-top: 1px dashed rgba(27, 67, 50, 0.2);
+}
+
+/* Tags */
+.menu-item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+}
+
+.menu-item-tag {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--color-green-dark);
+    color: var(--color-cream);
+    border-radius: 12px;
+}
+
+.menu-item-tag.tag-vegetarian {
+    background: var(--color-green-light);
+}
+
+.menu-item-tag.tag-signature {
+    background: var(--color-gold);
+    color: var(--color-green-dark);
+}
+
+.menu-item-tag.tag-popular {
+    background: var(--color-gold);
+    color: var(--color-green-dark);
+}
+
+/* Modal Footer */
+.menu-modal-footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-white);
+    border-top: 2px solid var(--color-green-light);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-shrink: 0;
+}
+
+.menu-modal-cta {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: var(--color-gold);
+    color: var(--color-green-dark);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-modal-cta:hover {
+    background: #c99860;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading State */
+.menu-item-image-wrapper.loading {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-modal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-modal-container {
+        margin: 0;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .menu-modal-header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .menu-modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .menu-modal-tabs {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .menu-modal-body {
+        padding: var(--spacing-md);
+    }
+    
+    .menu-modal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-modal-footer {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .menu-modal-cta {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item-name-overlay {
+        font-size: 1.25rem;
+    }
+    
+    .menu-item-price-badge {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+/* Prevent body scroll when modal is open */
+body.menu-modal-open {
+    overflow: hidden;
+}
