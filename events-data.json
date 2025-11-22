@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "id": "evt001",
+      "title": "Live Music: The Shamrocks",
+      "date": "2025-11-28",
+      "time": "8:00 PM - 11:00 PM",
+      "category": "live-music",
+      "shortDescription": "Irish folk band",
+      "fullDescription": "Join us for an authentic Irish music experience with The Shamrocks! This talented local band brings traditional Irish folk music to life with fiddles, flutes, and plenty of spirit. Enjoy classic tunes and sing-alongs while you sip on your favorite pint.",
+      "image": "🎵",
+      "featured": true
+    },
+    {
+      "id": "evt002",
+      "title": "Trivia Night",
+      "date": "2025-11-30",
+      "time": "7:00 PM - 9:00 PM",
+      "category": "special-event",
+      "shortDescription": "Test your knowledge",
+      "fullDescription": "Put your knowledge to the test at our weekly Trivia Night! Form a team with friends and compete for prizes. Topics range from pop culture to history, sports to science. Winner gets a $50 bar tab!",
+      "image": "🧠"
+    },
+    {
+      "id": "evt003",
+      "title": "Pool Tournament",
+      "date": "2025-12-05",
+      "time": "6:00 PM - 10:00 PM",
+      "category": "special-event",
+      "shortDescription": "Billiards competition",
+      "fullDescription": "Show off your billiards skills in our monthly pool tournament! Open to all skill levels. Entry fee is $10, and the winner takes home $200 cash prize plus bragging rights. Sign up at the bar by 5:30 PM.",
+      "image": "🎱",
+      "featured": true
+    },
+    {
+      "id": "evt004",
+      "title": "Live Music: Acoustic Sunset",
+      "date": "2025-12-07",
+      "time": "7:00 PM - 10:00 PM",
+      "category": "live-music",
+      "shortDescription": "Solo acoustic performance",
+      "fullDescription": "Relax with the smooth acoustic sounds of local artist Jake Morrison. Enjoy a mix of original songs and covers of classic rock and country favorites in an intimate setting.",
+      "image": "🎸"
+    },
+    {
+      "id": "evt005",
+      "title": "Karaoke Night",
+      "date": "2025-12-12",
+      "time": "8:00 PM - Midnight",
+      "category": "special-event",
+      "shortDescription": "Sing your heart out",
+      "fullDescription": "It's your time to shine! Grab the mic and belt out your favorite songs at our Karaoke Night. Whether you're a shower singer or a stage veteran, everyone's welcome. Full bar and food menu available all night.",
+      "image": "🎤"
+    },
+    {
+      "id": "evt006",
+      "title": "Live Band: The Rivermen",
+      "date": "2025-12-14",
+      "time": "9:00 PM - Midnight",
+      "category": "live-music",
+      "shortDescription": "Classic rock covers",
+      "fullDescription": "Rock out with The Rivermen, playing all your favorite classic rock hits from the 70s, 80s, and 90s. From Led Zeppelin to The Eagles, they'll have you on your feet all night long!",
+      "image": "🎸",
+      "featured": true
+    },
+    {
+      "id": "evt007",
+      "title": "Ugly Sweater Party",
+      "date": "2025-12-21",
+      "time": "7:00 PM - Close",
+      "category": "special-event",
+      "shortDescription": "Holiday celebration",
+      "fullDescription": "Dig out your tackiest holiday sweater and join us for our annual Ugly Sweater Party! Prizes for the ugliest sweaters, holiday-themed drinks, and festive cheer all night. DJ playing holiday favorites and party hits.",
+      "image": "🎄"
+    },
+    {
+      "id": "evt008",
+      "title": "New Year's Eve Bash",
+      "date": "2025-12-31",
+      "time": "8:00 PM - 1:00 AM",
+      "category": "special-event",
+      "shortDescription": "Ring in 2026!",
+      "fullDescription": "Celebrate New Year's Eve at Jerk Riley's! Live DJ, champagne toast at midnight, party favors, and special menu items. Dancing, drinks, and good times guaranteed. Reservations recommended - call (606) 212-3418.",
+      "image": "🎉",
+      "featured": true
+    }
+  ]
+}
