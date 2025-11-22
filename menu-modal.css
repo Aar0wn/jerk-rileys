@@ -15,7 +15,6 @@
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
 }
 
 .menu-modal.active {
@@ -47,12 +46,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transform: scale(0.9);
-    transition: transform 0.3s ease;
-}
-
-.menu-modal.active .menu-modal-container {
-    transform: scale(1);
 }
 
 /* Modal Header */
@@ -86,13 +79,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease;
-}
-
-.menu-modal-close:hover {
-    background: var(--color-green-dark);
-    color: var(--color-cream);
-    transform: rotate(90deg);
 }
 
 /* Category Tabs */
@@ -126,11 +112,6 @@
     border-bottom: 3px solid transparent;
     cursor: pointer;
     white-space: nowrap;
-    transition: all 0.2s ease;
-}
-
-.menu-modal-tab:hover {
-    color: var(--color-green-dark);
 }
 
 .menu-modal-tab.active {
@@ -159,15 +140,9 @@
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-}
-
-.menu-item-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* Image Container */
@@ -186,11 +161,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.menu-item-card:hover .menu-item-image {
-    transform: scale(1.05);
 }
 
 /* Image Overlay */
@@ -304,15 +274,8 @@
     border: none;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: all 0.2s ease;
     text-decoration: none;
     display: inline-block;
-}
-
-.menu-modal-cta:hover {
-    background: #c99860;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Loading State */
