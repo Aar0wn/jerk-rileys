@@ -27,3 +27,6 @@ npm-debug.log*
 *.tmp
 *.temp
 test-menu/
+
+# Agent/work files
+SUMMARY.md
