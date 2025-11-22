@@ -24,17 +24,20 @@
 }
 
 .calendar-nav-btn {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 12px;
     background: var(--color-cream);
     border: 2px solid var(--color-green-dark);
     border-radius: var(--radius-sm);
     color: var(--color-green-dark);
     cursor: pointer;
     transition: var(--transition-fast);
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .calendar-nav-btn:hover {
