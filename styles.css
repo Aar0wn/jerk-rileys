@@ -42,6 +42,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -50,6 +52,8 @@ body {
     background: var(--color-cream);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -423,6 +427,10 @@ button {
     transform: translateY(-2px);
 }
 
+.btn-outline:active {
+    transform: translateY(0);
+}
+
 .btn-full {
     width: 100%;
 }
@@ -774,16 +782,14 @@ section {
    =================================== */
 .gallery {
     background: var(--color-white);
+    padding-bottom: var(--spacing-lg);
 }
 
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
 }
 
 .carousel-track {
@@ -801,6 +807,7 @@ section {
     height: 400px;
     object-fit: cover;
     display: block;
+    max-width: 100%;
 }
 
 .carousel-btn {
@@ -871,6 +878,13 @@ section {
 @media (min-width: 768px) {
     .carousel-slide img {
         height: 500px;
+    }
+    
+    .carousel-container {
+        border-radius: var(--radius-lg);
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: var(--shadow-md);
     }
 }
 
@@ -1121,24 +1135,11 @@ section {
     }
 }
 
-/* Hero Actions Layout */
-.hero-actions {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-actions-primary {
-    display: flex;
-    gap: var(--spacing-sm);
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn-signup {
-    font-size: 0.9rem;
+/* Hero Actions - horizontal on tablet+ */
+@media (min-width: 768px) {
+    .hero-actions {
+        flex-wrap: nowrap;
+    }
 }
 
 /* Hero Pills */
