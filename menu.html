@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Jerk Riley's Billiards & Irish Pub</title>
+    <meta name="description" content="Explore our delicious menu featuring Irish classics, pub favorites, and local specialties at Jerk Riley's in Ashland, KY.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-text">Jerk Riley's</span>
+                <span class="nav-logo-subtext">Billiards & Pub</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#events" class="nav-link">Events</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+16062123418" class="nav-link nav-cta">Call Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1 class="menu-hero-title">Our Menu</h1>
+            <p class="menu-hero-subtitle">Crafted with care, served with pride</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation Tabs -->
+    <div class="menu-nav-wrapper">
+        <nav class="menu-nav-tabs" id="menuTabs">
+            <button class="menu-tab active" data-category="all">All Items</button>
+            <button class="menu-tab" data-category="appetizers">Appetizers</button>
+            <button class="menu-tab" data-category="entrees">Entrees</button>
+            <button class="menu-tab" data-category="burgers">Burgers & Sandwiches</button>
+            <button class="menu-tab" data-category="irish">Irish Classics</button>
+            <button class="menu-tab" data-category="sides">Sides</button>
+            <button class="menu-tab" data-category="desserts">Desserts</button>
+            <button class="menu-tab" data-category="drinks">Drinks</button>
+        </nav>
+    </div>
+
+    <!-- Menu Content -->
+    <main class="menu-main">
+        <div class="container">
+            <!-- Appetizers Section -->
+            <section class="menu-section" data-category="appetizers">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Appetizers</h2>
+                    <p class="menu-section-subtitle">Start your meal right</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Irish Nachos</h3>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <p class="menu-item-description">Crispy potato slices topped with melted cheese, bacon, jalapeños, sour cream, and green onions</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Popular</span>
+                            <span class="menu-tag tag-vegetarian">Vegetarian Option</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Guinness Wings</h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-description">Crispy chicken wings glazed with our signature Guinness BBQ sauce, served with ranch or blue cheese</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Chef's Special</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Loaded Potato Skins</h3>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <p class="menu-item-description">Crispy potato skins filled with cheddar cheese, bacon bits, and topped with sour cream and chives</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Pretzel Bites</h3>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <p class="menu-item-description">Warm soft pretzel bites served with beer cheese dip and honey mustard</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag tag-vegetarian">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Spinach & Artichoke Dip</h3>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <p class="menu-item-description">Creamy blend of spinach, artichokes, and cheese served hot with tortilla chips and pita bread</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag tag-vegetarian">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Mozzarella Sticks</h3>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <p class="menu-item-description">Golden-fried mozzarella sticks served with marinara sauce</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Entrees Section -->
+            <section class="menu-section" data-category="entrees">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Entrees</h2>
+                    <p class="menu-section-subtitle">Hearty meals to satisfy</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Fish & Chips</h3>
+                            <span class="menu-item-price">$16.99</span>
+                        </div>
+                        <p class="menu-item-description">Beer-battered cod served with crispy fries, coleslaw, and tartar sauce</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Signature</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Grilled Ribeye Steak</h3>
+                            <span class="menu-item-price">$26.99</span>
+                        </div>
+                        <p class="menu-item-description">12oz ribeye grilled to perfection, served with mashed potatoes and seasonal vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BBQ Ribs</h3>
+                            <span class="menu-item-price">$19.99</span>
+                        </div>
+                        <p class="menu-item-description">Fall-off-the-bone ribs glazed with house BBQ sauce, served with fries and coleslaw</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chicken Tenders</h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-description">Crispy chicken tenders served with fries and choice of dipping sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Grilled Salmon</h3>
+                            <span class="menu-item-price">$21.99</span>
+                        </div>
+                        <p class="menu-item-description">Fresh Atlantic salmon with lemon butter sauce, served with rice and asparagus</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag tag-healthy">Healthy Choice</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Burgers & Sandwiches -->
+            <section class="menu-section" data-category="burgers">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Burgers & Sandwiches</h2>
+                    <p class="menu-section-subtitle">Served with fries or upgrade to loaded fries</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Riley's Signature Burger</h3>
+                            <span class="menu-item-price">$15.99</span>
+                        </div>
+                        <p class="menu-item-description">Half-pound Angus beef, cheddar cheese, bacon, caramelized onions, lettuce, tomato, and special sauce on a brioche bun</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Best Seller</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Classic Cheeseburger</h3>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <p class="menu-item-description">Half-pound beef patty with American cheese, lettuce, tomato, pickles, and onions</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Mushroom Swiss Burger</h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-description">Beef patty topped with sautéed mushrooms, Swiss cheese, and garlic aioli</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Reuben Sandwich</h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-description">Corned beef, Swiss cheese, sauerkraut, and Thousand Island dressing on marbled rye</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Irish Classic</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Philly Cheesesteak</h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-description">Shaved ribeye, grilled peppers and onions, provolone cheese on a hoagie roll</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Veggie Burger</h3>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <p class="menu-item-description">House-made veggie patty with lettuce, tomato, avocado, and chipotle mayo</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag tag-vegetarian">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Irish Classics -->
+            <section class="menu-section" data-category="irish">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Irish Classics</h2>
+                    <p class="menu-section-subtitle">Authentic flavors from the Emerald Isle</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Shepherd's Pie</h3>
+                            <span class="menu-item-price">$15.99</span>
+                        </div>
+                        <p class="menu-item-description">Ground lamb and vegetables in rich gravy, topped with creamy mashed potatoes and baked golden</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Traditional</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Corned Beef & Cabbage</h3>
+                            <span class="menu-item-price">$17.99</span>
+                        </div>
+                        <p class="menu-item-description">Slow-cooked corned beef with cabbage, carrots, and potatoes</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Irish Classic</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Bangers & Mash</h3>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                        <p class="menu-item-description">Irish sausages served over creamy mashed potatoes with onion gravy and peas</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Irish Stew</h3>
+                            <span class="menu-item-price">$13.99</span>
+                        </div>
+                        <p class="menu-item-description">Tender lamb, potatoes, carrots, and onions in a hearty broth, served with Irish soda bread</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Boxty</h3>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <p class="menu-item-description">Traditional Irish potato pancakes served with sour cream and choice of filling</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sides -->
+            <section class="menu-section" data-category="sides">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Sides</h2>
+                    <p class="menu-section-subtitle">The perfect complement</p>
+                </div>
+                <div class="menu-grid menu-grid-sides">
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">French Fries</h3>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Loaded Fries</h3>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Onion Rings</h3>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Coleslaw</h3>
+                            <span class="menu-item-price">$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Mashed Potatoes</h3>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasonal Vegetables</h3>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Mac & Cheese</h3>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Side Salad</h3>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="menu-section" data-category="desserts">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Desserts</h2>
+                    <p class="menu-section-subtitle">Sweet endings</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chocolate Guinness Cake</h3>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                        <p class="menu-item-description">Rich chocolate cake made with Guinness, topped with cream cheese frosting</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">House Specialty</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Bread Pudding</h3>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <p class="menu-item-description">Traditional Irish bread pudding with whiskey sauce and vanilla ice cream</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Apple Crumble</h3>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <p class="menu-item-description">Warm spiced apples topped with buttery crumble and served with vanilla ice cream</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Cheesecake</h3>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <p class="menu-item-description">Creamy New York style cheesecake with your choice of topping</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drinks -->
+            <section class="menu-section" data-category="drinks">
+                <div class="menu-section-header">
+                    <h2 class="menu-section-title">Drinks</h2>
+                    <p class="menu-section-subtitle">Quench your thirst</p>
+                </div>
+                <div class="menu-drinks-grid">
+                    <div class="menu-drinks-category">
+                        <h3 class="menu-drinks-category-title">Draft Beer</h3>
+                        <div class="menu-drinks-list">
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Guinness</span>
+                                <span class="menu-drink-price">$6 / $8</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Smithwick's Irish Ale</span>
+                                <span class="menu-drink-price">$5 / $7</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Harp Lager</span>
+                                <span class="menu-drink-price">$5 / $7</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Local IPA</span>
+                                <span class="menu-drink-price">$6 / $8</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Domestic Selections</span>
+                                <span class="menu-drink-price">$4 / $6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-drinks-category">
+                        <h3 class="menu-drinks-category-title">Cocktails</h3>
+                        <div class="menu-drinks-list">
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Irish Coffee</span>
+                                <span class="menu-drink-price">$9</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Whiskey Sour</span>
+                                <span class="menu-drink-price">$8</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Irish Mule</span>
+                                <span class="menu-drink-price">$9</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Old Fashioned</span>
+                                <span class="menu-drink-price">$10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-drinks-category">
+                        <h3 class="menu-drinks-category-title">Wine</h3>
+                        <div class="menu-drinks-list">
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">House Red</span>
+                                <span class="menu-drink-price">$7 / $25</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">House White</span>
+                                <span class="menu-drink-price">$7 / $25</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Premium Selection</span>
+                                <span class="menu-drink-price">Ask Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-drinks-category">
+                        <h3 class="menu-drinks-category-title">Non-Alcoholic</h3>
+                        <div class="menu-drinks-list">
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Soft Drinks</span>
+                                <span class="menu-drink-price">$3</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Fresh Brewed Iced Tea</span>
+                                <span class="menu-drink-price">$3</span>
+                            </div>
+                            <div class="menu-drink-item">
+                                <span class="menu-drink-name">Coffee / Hot Tea</span>
+                                <span class="menu-drink-price">$3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="menu-cta">
+                <div class="menu-cta-content">
+                    <h2 class="menu-cta-title">Ready to Order?</h2>
+                    <p class="menu-cta-text">Visit us, call for pickup, or order online for delivery</p>
+                    <div class="menu-cta-actions">
+                        <a href="https://www.doordash.com" target="_blank" class="btn btn-primary">Order on DoorDash</a>
+                        <a href="tel:+16062123418" class="btn btn-outline">Call for Pickup</a>
+                    </div>
+                    <p class="menu-cta-note">Have questions about our menu or dietary restrictions? <a href="index.html#contact">Contact us</a> and we'll be happy to help!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Jerk Riley's">
+                    <p>Your Local Irish Experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#events">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+16062123418">(606) 212-3418</a></li>
+                            <li><a href="https://maps.google.com/?q=1612+Greenup+Avenue,+Ashland,+KY+41101" target="_blank">Get Directions</a></li>
+                            <li><a href="https://www.doordash.com" target="_blank">Order Online</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jerk Riley's Billiards & Irish Pub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu-script.js"></script>
