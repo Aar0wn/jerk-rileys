@@ -50,6 +50,12 @@ jerks/
 ├── styles.css          # All website styles (mobile-first)
 ├── script.js           # Main navigation and interaction logic
 ├── carousel.js         # Gallery carousel functionality
+├── calendar.js         # Events calendar functionality
+├── calendar.css        # Events calendar styles
+├── events-data.json    # Event data for calendar
+├── menu-modal.js       # Visual menu modal functionality
+├── menu-modal.css      # Menu modal styles (no animations/hovers)
+├── menu-data.js        # Structured menu data with images
 ├── logo.png            # Optimized logo (797KB)
 ├── gallery/            # Gallery images
 │   ├── bar-interior.jpg
@@ -61,13 +67,15 @@ jerks/
 ### Key Files to Understand
 
 **index.html** - Single-page application structure:
-- Hero section with logo and CTA buttons
-- About section (4 feature cards)
-- Gallery section (static image grid)
-- Menu section (links to menu.html and DoorDash)
-- Events section (email signup)
+- Hero section with logo and 3 CTA buttons (View Menu, Order Online via SkyTab, Order on DoorDash)
+- About section (unified card with 4 feature items: Billiards, Live Music, Irish Pub, Great Food)
+- Gallery section (full-width carousel on mobile, contained on desktop)
+- Menu section (Browse Menu modal, DoorDash, SkyTab pickup ordering)
+- Events section (interactive calendar widget with modal)
 - Contact section (unified contact card + signup form)
+- Footer with logo, tagline, and 4 columns
 - Comprehensive SEO meta tags and JSON-LD structured data
+- NO scroll indicator (removed for cleaner UX)
 
 **styles.css** - Mobile-first responsive styles:
 - CSS variables define color palette (lines 4-34)
@@ -90,6 +98,21 @@ jerks/
 - Keyboard navigation (arrow keys)
 - Auto-play with 5-second intervals
 - Pause on hover
+
+**calendar.js** - Interactive events calendar:
+- Loads events from `events-data.json`
+- Month navigation (prev/next/today)
+- Event indicators with emoji icons
+- Click event to open detailed modal
+- Mobile-optimized for iPhone 14 (390px width)
+
+**menu-modal.js** - Visual menu modal:
+- Opens full-screen modal with menu items
+- Category filtering via tabs
+- Image-rich menu cards with Unsplash photos
+- NO animations or hover effects (optimized for speed)
+- Lazy loading images
+- Body scroll lock when open
 
 ### Design System
 
@@ -133,11 +156,13 @@ await fetch('YOUR_ZAPIER_WEBHOOK_URL', {
 
 ### Updating Content
 All content is in `index.html`. Key sections:
-- **Hero**: Lines 109-143 (logo, tagline, CTAs)
-- **About**: Lines 146-182 (welcome text, feature cards)
-- **Menu**: Lines 185-200 (menu intro, CTA buttons)
-- **Gallery**: Managed via `carousel.js`
-- **Contact**: Lines in contact section (location, phone, hours)
+- **Hero**: Logo, tagline, 3 CTA buttons (View Menu, Order Online SkyTab, Order on DoorDash)
+- **About**: Welcome text and unified card with 4 feature items
+- **Menu**: Menu intro, 3 CTA buttons (Browse Menu modal, DoorDash, Order Pickup SkyTab)
+- **Gallery**: Full-width carousel managed via `carousel.js`
+- **Events**: Interactive calendar widget managed via `calendar.js` and `events-data.json`
+- **Contact**: Location, phone, hours
+- **Footer**: Logo in first column with tagline, followed by Quick Links, Contact, Location
 
 ### Changing Colors
 Edit CSS variables in `styles.css` (lines 4-12):
@@ -209,15 +234,40 @@ Targets modern browsers:
 
 **Does NOT support:** IE11 or older browsers
 
-## Contact Information
+## Contact Information and URLs
 
 When updating contact details in code:
 - **Address**: 1612 Greenup Avenue, Ashland, KY 41101
 - **Phone**: (606) 212-3418
-- **DoorDash**: https://www.doordash.com
+- **DoorDash**: https://www.doordash.com/store/jerk-riley's-irish-pub-and-billiards-ashland-31192937/?event_type=autocomplete&pickup=false
+- **SkyTab Ordering**: https://online.skytab.com/a22146bde473b7a1179eac80f420b0dc/order-settings
 - **Coordinates**: 38.4784, -82.6379
 
-Update in both `index.html` (multiple locations) and structured data (lines 53-65).
+Update in both `index.html` (multiple locations), `menu-modal.js`, and structured data.
+
+### Button Configuration (as of Nov 2025)
+**Hero Section:**
+- "View Menu" → Opens menu modal
+- "Order Online" → SkyTab ordering system
+- "Order on DoorDash" → DoorDash restaurant page
+
+**Menu Section:**
+- "Browse Menu" → Opens menu modal
+- "Order on DoorDash" → DoorDash restaurant page
+- "Order Pickup" → SkyTab ordering system
+
+## Recent Changes (Nov 2025)
+
+1. **Interactive Events Calendar** - Full calendar widget with JSON data source, month navigation, event modals
+2. **Visual Menu Modal** - Image-rich menu modal with Unsplash photos, category tabs, NO animations for speed
+3. **About Section Redesign** - Combined 4 feature cards into unified card with horizontal layout
+4. **Footer Redesign** - Added logo as first column with tagline underneath
+5. **Navbar Logo Positioning** - Increased size and offset for better alignment
+6. **Hero Buttons** - Separated SkyTab (Order Online) from DoorDash (Order on DoorDash)
+7. **Gallery Optimization** - Full-width on mobile, contained on desktop, no horizontal scroll
+8. **Removed Scroll Indicator** - Cleaner hero section without bounce animation
+9. **URL Updates** - All DoorDash links now point to specific restaurant page
+10. **Performance** - Removed all animations and hover effects from menu modal
 
 ## Files NOT to Commit
 
@@ -225,5 +275,6 @@ Update in both `index.html` (multiple locations) and structured data (lines 53-6
 - `README.md` (development documentation)
 - `SUMMARY.md` (project summary)
 - `serve.py` (local dev server only)
+- `test-menu/` (testing directory)
 
 These are useful for development but not needed in production deployment.
