@@ -42,7 +42,7 @@
                     </div>
                     
                     <div class="menu-modal-footer">
-                        <a href="https://www.doordash.com" target="_blank" class="menu-modal-cta">
+                        <a href="https://www.doordash.com/store/jerk-riley's-irish-pub-and-billiards-ashland-31192937/?event_type=autocomplete&pickup=false" target="_blank" class="menu-modal-cta">
                             Order on DoorDash
                         </a>
                         <a href="tel:+16062123418" class="menu-modal-cta btn-outline" style="background: transparent; border: 2px solid var(--color-green-dark); color: var(--color-green-dark);">
